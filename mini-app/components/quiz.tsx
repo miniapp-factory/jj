@@ -135,7 +135,7 @@ export default function Quiz() {
         {shuffledAnswers.map((ans, idx) => (
           <button
             key={idx}
-            onClick={() => handleAnswer(ans.animal)}
+            onClick={() => handleAnswer(ans.animal as Animal)}
             className="px-4 py-2 rounded-md bg-secondary text-secondary-foreground"
           >
             {ans.text}
